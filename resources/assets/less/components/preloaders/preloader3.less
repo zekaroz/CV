@@ -1,0 +1,47 @@
+
+@preloader3_size: 5rem;
+
+.js-yes{
+
+	.preloader_type3:before, .preloader_type3:after, .preloader__round{
+		
+		position: absolute;
+		background-color: @color_white;
+		opacity: 0;
+		
+		.circle(@preloader3_size, @preloader3_size);
+		animation: preloader3 1.5s 0s linear infinite;
+	}
+
+	.preloader_type3{
+		
+		&:before, &:after{
+			content: "";
+			display: block;
+		}
+		
+		&:before{
+			animation-delay: .33333s;  
+		}
+		
+		&:after{
+			animation-delay: .66666s;
+		}
+	}
+}
+ 
+@keyframes preloader3{
+	
+	0%{
+		transform: translate3d(0, 0, 0) scale(0);
+	}
+	
+	5%{
+		opacity: 1;
+	}
+	
+	100%{
+		transform: translate3d(0, 0, 0) scale(1);
+	}
+}
+ 

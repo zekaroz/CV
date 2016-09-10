@@ -1,0 +1,159 @@
+
+@font_family: arial;
+@font_size: 1.4rem;
+
+/*main color variables*/
+
+@color_shadow: rgba(0, 0, 0, 0.298039);
+@color_black: #000;
+@color_white: #fff;
+@color_gray: #eee;
+
+/*INDIGO*/
+@color_main: #3F51B5;
+@color_dark_main: #303F9F;
+@color_light_main: #C5CAE9; 
+
+.shadow(){
+	box-shadow: 0 2px 5px 0 @color_shadow;
+}
+
+.demo-title{
+	display: flex;
+	justify-content: space-between;
+}
+
+.title_no-margin{
+	margin-bottom: 1.5rem;
+}
+
+.title__caption{
+	font-size: 1.4rem;
+	
+}
+
+.page{
+	min-height: 100vh;
+}
+
+.sidebar{
+	
+	padding: 2rem;
+	box-sizing: border-box;
+	background-color: @color_dark_main;
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.name-theme{
+	font-size: 3.5rem;
+	color: @color_white;
+	line-height: 3rem;
+}
+
+.name-theme__label{
+	font-size: 1.6rem;
+	font-weight: 400;
+	color: @color_light_main;
+	display: block;
+}
+
+@media screen and (min-width: 1024px){
+	
+	.buy-theme{
+		margin-top: 2rem;
+	}
+}
+
+@media screen and (max-width: 1023px){
+	
+	.sidebar__inner{
+		display: flex;
+		align-items: center;
+	}
+	
+	.buy-theme{
+		margin-left: 5rem;
+	}
+}
+
+@media screen and (max-width: 480px){
+
+	.sidebar__inner{
+		width: 100%;
+		justify-content: space-between;
+	}
+}
+
+.container{
+	padding: 2rem;
+}
+
+.home-content{
+ 	background-color: @color_white;	
+	.shadow();
+	padding: 5rem 2rem;	
+}
+
+.demo-block{
+	margin-bottom: 3rem;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.demo-links{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.demo-link{
+	
+	box-sizing: border-box;
+	width: 32.5%;
+	margin-top: .5vw;
+	
+	&:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(3){
+		margin-top: 0;
+	}	
+	
+	&:nth-of-type(3n+2){
+		margin-left: 1%;
+		margin-right: 1%;
+	}
+}
+
+@media screen and (max-width: 480px){
+	
+	.demo-link{
+		
+		width: 49%; 
+		margin-top: 1.8vw;
+
+		&:nth-of-type(3), &:nth-of-type(4){
+			margin-top: 1.8vw;
+		}		
+		
+		&:nth-of-type(3n+2){
+			margin-right: 0;
+			margin-left: 0;
+		}
+		
+		&:nth-of-type(2n+1){
+			margin-right: 1%;
+			margin-left: 0;
+		}
+		
+		&:nth-of-type(2n+2){
+			margin-right: 0;
+			margin-left: 1%;
+		}
+	}
+}
+
+.demo-icon{
+	margin: 0 1rem 2rem;
+}

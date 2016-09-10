@@ -1,0 +1,24 @@
+
+.blockquote{
+	position: relative;
+	padding: 0 3.5rem;
+	box-sizing: border-box;
+	border-left: .5rem solid @color_dark_main;
+}
+
+.blockquote__quote{
+	position: absolute;
+	&:before{
+		color: @color_dark_main;
+	}	
+}
+
+.blockquote__quote-left{
+	top: 0;
+	left: 1rem;
+}
+
+.blockquote__quote-right{
+	bottom: 0;
+	right: 1rem;
+}

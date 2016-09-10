@@ -1,0 +1,69 @@
+
+h1, h2, h3, h4, h5, h6{
+	color: @color_black;
+	box-sizing: border-box;
+}
+
+.title, h2{
+	font-size: 2.4rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 3.5rem;
+}
+
+.title_middle, h3{
+	font-size: 2.2rem;
+	line-height: 3rem;
+}
+
+.title_middle{
+	margin-bottom: 3rem;
+}
+
+.title_small, h4{ 
+	font-size: 1.8rem;
+	line-height: 2.5rem;
+}
+
+.title_little, h5{
+	font-size: 1.4rem;
+}
+
+.main-title{
+	letter-spacing: .1rem;
+	text-align: center;
+	margin-bottom: 5rem;
+}
+
+.main-title__label{
+	
+	background-color: @color_white;
+	position: relative;
+	
+	&:before, &:after{
+		
+		content: "";
+		display: block;
+		width: 7.5rem;
+		height: 1px;
+		
+		background-color: @color_light_main;
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+	
+	&:before{
+		left: -9.5rem;
+	}
+	
+	
+	&:after{
+		right: -9.5rem;
+	}		
+}
+
+.title__label{
+	display: inline-block;
+	vertical-align: middle;
+}

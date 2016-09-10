@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Strict Resume - it's vCard/resume template</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/table.css">
+</head>
+<body>
+	<header class="dt-header dt-header_blue">
+		<span class="dt-logo">Strict Resume - it's vCard/resume template</span>
+	</header>	
+	<div class="dt-container dt-container_flex">
+		<aside class="dt-navbar">
+			<nav class="dt-navbar__nav">
+				<div class="dt-navbar__section">
+					<ul class="dt-navbar__list">
+						<li><a href="#files_structure" class="dt-navbar__link">File structure</a></li>
+						<li><a href="#settings" class="dt-navbar__link">Settings</a></li>
+						<li><a href="#include_fonts" class="dt-navbar__link">Attaching fonts</a></li>
+						<li>
+							<a href="#html_structure" class="dt-navbar__link">HTML structure</a>
+							<ul class="dt-navbar__list">
+								<li><a href="#html_structure_about" class="dt-navbar__link dt-navbar__link_nested">HTML structure of "About me" section</a></li>
+								<li><a href="#html_structure_resume" class="dt-navbar__link dt-navbar__link_nested">HTML structure of "Resume" section</a></li>
+								<li><a href="#html_structure_services" class="dt-navbar__link dt-navbar__link_nested">HTML structure of "Services" section</a></li>
+								<li><a href="#html_structure_portfolio" class="dt-navbar__link dt-navbar__link_nested">HTML structure of "Portfolio" section</a></li>
+								<li><a href="#html_structure_blog" class="dt-navbar__link dt-navbar__link_nested">HTML structure of "Blog" section</a></li>
+								<li><a href="#html_structure_contacts" class="dt-navbar__link dt-navbar__link_nested">HTML structure of "Contacts" section</a></li>
+							</ul>
+						</li>
+						<li><a href="#icons" class="dt-navbar__link">Icons</a></li>
+						<li><a href="#preloaders" class="dt-navbar__link">Preloaders</a></li>
+					</ul>
+				</div>
+				<div class="dt-navbar__section">
+					<h3 class="dt-title dt-title_small dt-navbar__title">Examples</h3>
+					<ul class="dt-navbar__list">
+						<li><a href="../../examples/arial.html" class="dt-navbar__link" target="blank">Arial</a></li>
+						<li><a href="../../examples/open_sans.html" class="dt-navbar__link" target="blank">Open Sans</a></li>
+						<li><a href="../../examples/roboto.html" class="dt-navbar__link" target="blank">Roboto</a></li>
+						<li><a href="../../examples/lato.html" class="dt-navbar__link" target="blank">Lato</a></li>
+						<li><a href="../../examples/pt_sans.html" class="dt-navbar__link" target="blank">PT Sans</a></li>
+						<li><a href="../../examples/source_sans_pro.html" class="dt-navbar__link" target="blank">Source Sans Pro</a></li>
+						<li><a href="../../examples/roboto_condensed.html" class="dt-navbar__link" target="blank">Roboto Condensed</a></li>
+						<li><a href="../../examples/ubuntu.html" class="dt-navbar__link" target="blank">Ubuntu</a></li>
+						<li><a href="../../examples/fira_sans.html" class="dt-navbar__link" target="blank">Fira Sans</a></li>
+						<li><a href="../../examples/work_sans.html" class="dt-navbar__link" target="blank">Work Sans</a></li>
+						<li><a href="../../examples/oswald.html" class="dt-navbar__link" target="blank">Oswald</a></li>
+						<li><a href="../../examples/arial.html" class="dt-navbar__link" target="blank">Indigo</a></li>
+						<li><a href="../../examples/green.html" class="dt-navbar__link" target="blank">Green</a></li>
+						<li><a href="../../examples/orange.html" class="dt-navbar__link" target="blank">Orange</a></li>
+						<li><a href="../../examples/pink.html" class="dt-navbar__link" target="blank">Pink</a></li>
+						<li><a href="../../examples/purpure.html" class="dt-navbar__link" target="blank">Purpure</a></li>
+						<li><a href="../../examples/red.html" class="dt-navbar__link" target="blank">Red</a></li>
+						<li><a href="../../examples/deep_purple.html" class="dt-navbar__link" target="blank">Deep purple</a></li>
+						<li><a href="../../examples/blue.html" class="dt-navbar__link" target="blank">Blue</a></li>
+						<li><a href="../../examples/teal.html" class="dt-navbar__link" target="blank">Teal</a></li>
+						<li><a href="../../examples/brown.html" class="dt-navbar__link" target="blank">Brown</a>	</li>				
+					</ul>
+				</div>			
+			</nav>
+		</aside>	
+		<div class="dt-content dt-content_scroll-bar-yes">
+			<div class="dt-section">
+				<p>By:Stas Melnikov</p>
+				<p>Thank you for your purchase. If you have any questions, mail me to - <a href="mailto:melnik909@ya.ru">melnik909@ya.ru</a></p>
+			</div>		
+			<article id="files_structure" class="dt-section">
+				<h2 class="dt-title">File structure</h2>
+				<p>After unpacking archive, you'll see this structure:</p>
+				<div class="dt-info-block">
+					<pre class="code language-html">
+						<code>
+strict/
+│ 
+├──css/		
+│  │  ├──components/
+│  │  │  ├──preloaders/			
+│  │  │  │  ├──preloader1.less
+│  │  │  │  ├──preloader2.less
+│  │  │  │  ├──preloader3.less
+│  │  │  │  ├──preloaders.less
+│  │  │  ├──card.less
+│  │  │  ├──clients.less
+│  │  │  ├──form.less
+│  │  │  ├──iconbox.less
+│  │  │  ├──nav.less
+│  │  │  ├──pagination.less
+│  │  │  ├──popup.less
+│  │  │  ├──price_table.less
+│  │  │  ├──progress-bar.less
+│  │  │  ├──tags.less
+│  │  │  ├──timeline.less
+│  │  ├──examples/			
+│  │  ├──layout/
+│  │  │  ├──content.less
+│  │  │  ├──layout.less
+│  │  │  ├──sidebar.less
+│  │  │  ├──tabs_infoblocks.less
+│  │  ├──typographics/			
+│  │  │  ├──blockquote.less
+│  │  │  ├──icons.less
+│  │  │  ├──links.less
+│  │  │  ├──titles.less
+│  │  │  ├──typographics.less
+│  │  ├──contacts.less		
+│  │  ├──resume.less	
+│  │  ├──services.less			
+│  │  ├──style.less			
+├──examples/					
+├──icons					
+├──js					
+						</code>
+					</pre>
+				</div>
+				<ul class="dt-list dt-list_nested dt-info-block">
+					<li>
+						<span class="dt-label dt-label_bold">components</span> - CSS for page components
+						<ul class="dt-list dt-list_nested">
+							<li><span class="dt-label dt-label_bold">preloaders</span> - CSS for animation preloaders</li>
+							<li>
+								<span class="dt-label dt-label_bold">cards.less</span> - CSS for cards. Example, 
+								portfolio cards, blog cards testimonials cards and services cards
+							</li>
+							<li>
+								<span class="dt-label dt-label_bold">clients.less</span> - 
+								CSS for "Clients" section
+							</li>
+							<li><span class="dt-label dt-label_bold">form.less</span> - CSS for contact form</li>
+							<li>
+								<span class="dt-label dt-label_bold">iconbox.less</span> - CSS for blocks with icons.
+								Example, "Personal info" section
+							</li>
+							<li><span class="dt-label dt-label_bold">nav.less</span> - CSS for navigation</li>
+							<li><span class="dt-label dt-label_bold">pagination.less</span> - CSS for pagination</li>
+							<li><span class="dt-label dt-label_bold">popup.less</span> - CSS for popup</li>
+							<li><span class="dt-label dt-label_bold">price_table.less</span> - CSS for pricing table</li>
+							<li><span class="dt-label dt-label_bold">progress-bar.less</span> - CSS for "Skills" section</li>
+							<li><span class="dt-label dt-label_bold">tags.less</span> - CSS for tags on "Portfolio" and "Blog" sections</li>
+							<li><span class="dt-label dt-label_bold">timeline.less</span> - CSS for timeline</li>
+						</ul>
+					</li>
+					<li><span class="dt-label dt-label_bold">examples</span> - CSS for examples</li>
+					<li>
+						<span class="dt-label dt-label_bold">layout</span> - CSS for theme layout
+						<ul class="dt-list dt-list_nested">
+							<li><span class="dt-label dt-label_bold">content.less, tabs_infoblocks.less</span> - CSS for content column</li>
+							<li><span class="dt-label dt-label_bold">sidebar.less</span> - CSS for column with avatar</li>
+						</ul>
+					</li>
+					<li>
+						<span class="dt-label dt-label_bold">typographics</span> - CSS for theme typographics
+						<ul class="dt-list dt-list_nested">
+							<li><span class="dt-label dt-label_bold">blockquote.less</span> - CSS for blocks with quote</li>
+							<li><span class="dt-label dt-label_bold">icons.less</span> - CSS for icons</li>
+							<li><span class="dt-label dt-label_bold">links.less</span> - CSS for links</li>
+							<li><span class="dt-label dt-label_bold">titles.less</span> - CSS for titles</li>
+						</ul>
+					</li>
+					<li><span class="dt-label dt-label_bold">contacts.less</span> - CSS for "Contacts" section</li>
+					<li><span class="dt-label dt-label_bold">resume.less</span> - CSS for "Resume" section</li>
+					<li><span class="dt-label dt-label_bold">services.less</span> - CSS for "Services" section</li>
+					<li><span class="dt-label dt-label_bold">style.less</span> - main CSS file</li>
+				</ul>
+			</article>
+			<article id="settings" class="dt-section">
+				<h2 class="dt-title">Settings</h2>
+				<p>
+					For editing the theme you can use following settings.
+				</p>
+
+				<table>
+					<thead>
+					<tr>
+						<th>Name</th>
+						<th>Description</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td colspan="2"><span class="dt-label dt-label_bold">Color theme "Indigo"</span></td>
+						</tr>
+						<tr>
+							<td>@color_main</td>
+							<td>#3F51B5</td>
+						</tr>
+						<tr>
+							<td>@color_dark_main</td>
+							<td>#303F9F</td>
+						</tr>	
+						<tr>
+							<td>@color_light_main</td>
+							<td>#C5CAE9</td>
+						</tr>
+						<tr>
+							<td colspan="2"><span class="dt-label dt-label_bold">Color theme "Blue"</span></td>
+						</tr>
+						<tr>
+							<td>@color_main</td>
+							<td>#2196F3</td>
+						</tr>
+						<tr>
+							<td>@color_dark_main</td>
+							<td>#1976D2</td>
+						</tr>	
+						<tr>
+							<td>@color_light_main</td>
+							<td>#BBDEFB</td>
+						</tr>
+						<tr>
+							<td colspan="2"><span class="dt-label dt-label_bold">Color theme Teal"</span></td>
+						</tr>
+						<tr>
+							<td>@color_main</td>
+							<td>#009688</td>
+						</tr>
+						<tr>
+							<td>@color_dark_main</td>
+							<td>#00796B</td>
+						</tr>	
+						<tr>
+							<td>@color_light_main</td>
+							<td>#B2DFDB</td>
+						</tr>	
+						<tr>
+							<td colspan="2"><span class="dt-label dt-label_bold">Color theme "Brown"</span></td>
+						</tr>
+						<tr>
+							<td>@color_main</td>
+							<td>#795548</td>
+						</tr>
+						<tr>
+							<td>@color_dark_main</td>
+							<td>#5D4037</td>
+						</tr>	
+						<tr>
+							<td>@color_light_main</td>
+							<td>#D7CCC8</td>
+						</tr>
+						<tr>
+							<td colspan="2"><span class="dt-label dt-label_bold">Color theme "Deep purple"</span></td>
+						</tr>
+						<tr>
+							<td>@color_main</td>
+							<td>#673AB7</td>
+						</tr>
+						<tr>
+							<td>@color_dark_main</td>
+							<td>#512DA8</td>
+						</tr>	
+						<tr>
+							<td>@color_light_main</td>
+							<td>#D1C4E9</td>
+						</tr>
+						<tr>
+							<td colspan="2"><span class="dt-label dt-label_bold">Color theme "Green"</span></td>
+						</tr>
+						<tr>
+							<td>@color_main</td>
+							<td>#4CAF50</td>
+						</tr>
+						<tr>
+							<td>@color_dark_main</td>
+							<td>#388E3C</td>
+						</tr>	
+						<tr>
+							<td>@color_light_main</td>
+							<td>#C8E6C9</td>
+						</tr>	
+						<tr>
+							<td colspan="2"><span class="dt-label dt-label_bold">Color theme "Orange"</span></td>
+						</tr>
+						<tr>
+							<td>@color_main</td>
+							<td>#FF9800</td>
+						</tr>
+						<tr>
+							<td>@color_dark_main</td>
+							<td>#F57C00</td>
+						</tr>	
+						<tr>
+							<td>@color_light_main</td>
+							<td>#FFE0B2</td>
+						</tr>	
+						<tr>
+							<td colspan="2"><span class="dt-label dt-label_bold">Color theme Pink"</span></td>
+						</tr>
+						<tr>
+							<td>@color_main</td>
+							<td>#E91E63</td>
+						</tr>
+						<tr>
+							<td>@color_dark_main</td>
+							<td>#C2185B</td>
+						</tr>	
+						<tr>
+							<td>@color_light_main</td>
+							<td>#F8BBD0</td>
+						</tr>	
+						<tr>
+							<td colspan="2"><span class="dt-label dt-label_bold">Color theme "Purpure"</span></td>
+						</tr>
+						<tr>
+							<td>@color_main</td>
+							<td>#9C27B0</td>
+						</tr>
+						<tr>
+							<td>@color_dark_main</td>
+							<td>#7B1FA2</td>
+						</tr>	
+						<tr>
+							<td>@color_light_main</td>
+							<td>#E1BEE7</td>
+						</tr>	
+						<tr>
+							<td colspan="2"><span class="dt-label dt-label_bold">Color theme "Red"</span></td>
+						</tr>
+						<tr>
+							<td>@color_main</td>
+							<td>#F44336</td>
+						</tr>
+						<tr>
+							<td>@color_dark_main</td>
+							<td>#D32F2F</td>
+						</tr>	
+						<tr>
+							<td>@color_light_main</td>
+							<td>#FFCDD2</td>
+						</tr>						
+						<tr>
+							<td colspan="2"><span class="dt-label dt-label_bold">Optional colors</span></td>
+						</tr>
+						<tr>
+							<td>@color_black</td>
+							<td>#000</td>
+						</tr>
+						<tr>
+							<td>@color_white</td>
+							<td>#fff</td>
+						</tr>	
+						<tr>
+							<td>@color_gray</td>
+							<td>#eee</td>
+						</tr>
+						<tr>
+							<td colspan="2"><span class="dt-label dt-label_bold">Typographics</span></td>
+						</tr>						
+						<tr>
+							<td>@font_family</td>
+							<td>Arial,Helvetica,sans-serif</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>'Work Sans', sans-serif</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>'Fira Sans', sans-serif</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>'Lato', sans-serif</td>
+						</tr>	
+						<tr>
+							<td></td>
+							<td>'Open Sans', sans-serif</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>'Oswald', sans-serif</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>'PT Sans', sans-serif</td>
+						</tr>	
+						<tr>
+							<td></td>
+							<td>'Roboto', sans-serif</td>
+						</tr>
+						<tr>
+							<td></td>
+							<td>'Roboto Condensed', sans-serif</td>
+						</tr>		
+						<tr>
+							<td></td>
+							<td>'Source Sans Pro', sans-serif</td>
+						</tr>	
+						<tr>
+							<td></td>
+							<td>'Ubuntu', sans-serif</td>
+						</tr>						
+						<tr>
+							<td>@font_size</td>
+							<td>1.4rem</td>
+						</tr>						
+					</tbody>
+				</table>				
+			</article>
+			<article id="include_fonts" class="dt-section">
+				<h2 class="dt-title">Include of fonts</h2>
+				<p>To use one of these fonts, you must add one tag 'link' from section below to head section.</p>
+				<pre class="code language-html">
+					<code>
+&lt;link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet"&gt;					
+&lt;link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet"&gt;					
+&lt;link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet"&gt;					
+&lt;link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet"&gt;					
+&lt;link href="https://fonts.googleapis.com/css?family=Work+Sans:400,700" rel="stylesheet"&gt;					
+&lt;link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,700" rel="stylesheet"&gt;					
+&lt;link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"&gt;					
+&lt;link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet"&gt;					
+&lt;link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet"&gt;					
+					</code>
+				</pre>	
+				<p>
+					Next step is to set the @font_family option with using settings table.
+					As well, I note, that all ready examples you'll find in folder 'examples'.
+				</p>				
+			</article>
+			<article id="html_structure" class="dt-section">
+				<h2 class="dt-title">HTML structure</h2>
+				<pre class="code language-html">
+					<code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+ &lt;head&gt;
+ 
+  &lt;!-- meta-information--&gt;
+ 
+  &lt;title&gt;Strict Resume - it's vCard/resume template&lt;/title&gt;
+  &lt;meta charset="utf-8" /&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"/&gt;
+  
+   &lt;!-- attaching CSS--&gt;
+  
+  &lt;link rel="stylesheet" href="css/examples/fonts/arial.css"/&gt;
+  
+ &lt;/head&gt;
+ &lt;body&gt;
+ 
+ &lt;script&gt;document.body.classList.add("js-yes");&lt;/script&gt;
+ 
+&lt;div class="page"&gt;
+ &lt;aside id="js-sidebar" class="sidebar"&gt;
+  &lt;img src="http://placehold.it/800x1200" class="avatar" alt="avatar of Bernard Balfour"&gt;
+  &lt;div class="welcome"&gt;
+   &lt;h1 class="welcome__msg"&gt;
+    I'am Bernard Balfour
+    &lt;span class="welcome__label"&gt;Front-end developer from Denmark&lt;/span&gt;
+   &lt;/h1&gt;
+  &lt;/div&gt;
+ &lt;/aside&gt;
+ &lt;div class="container"&gt;
+ 
+ &lt;!-- navigation--&gt;
+  &lt;header class="header"&gt;
+   &lt;nav id="js-nav" class="nav"&gt;
+    &lt;a href="#about" class="nav__link js-nav__link nav__link_active"&gt;
+     &lt;i class="icon nav__icon icon_white icon-account_circle"&gt;&lt;/i&gt;
+     &lt;span class="nav__label"&gt;About me&lt;/span&gt;
+    &lt;/a&gt;				
+    &lt;a href="#resume" class="nav__link js-nav__link"&gt;
+     &lt;i class="icon nav__icon icon_white icon-assignment"&gt;&lt;/i&gt;
+     &lt;span class="nav__label"&gt;Resume&lt;/span&gt;
+    &lt;/a&gt;				
+    &lt;a href="#services" class="nav__link js-nav__link"&gt;
+     &lt;i class="icon nav__icon icon_white icon-keyboard"&gt;&lt;/i&gt;
+     &lt;span class="nav__label"&gt;Services&lt;/span&gt;
+    &lt;/a&gt;				
+    &lt;a href="#portfolio" class="nav__link js-nav__link"&gt;
+     &lt;i class="icon nav__icon icon_white icon-laptop_windows"&gt;&lt;/i&gt;
+     &lt;span class="nav__label"&gt;Portfolio&lt;/span&gt;
+    &lt;/a&gt;				
+    &lt;a href="#blog" class="nav__link js-nav__link"&gt;
+     &lt;i class="icon nav__icon icon_white icon-mode_edit"&gt;&lt;/i&gt;
+     &lt;span class="nav__label"&gt;Blog&lt;/span&gt;
+    &lt;/a&gt;				
+    &lt;a href="#contacts" class="nav__link js-nav__link"&gt;
+     &lt;i class="icon nav__icon icon_white icon-person_pin_circle"&gt;&lt;/i&gt;
+     &lt;span class="nav__label"&gt;Contacts&lt;/span&gt;
+    &lt;/a&gt;				
+   &lt;/nav&gt;
+  &lt;/header&gt;
+  
+  &lt;!-- content--&gt;
+  
+  &lt;div class="content"&gt;
+   &lt;div id="js-tabs-infoblocks" class="tabs-infoblocks"&gt;
+    &lt;section id="about" class="tabs-infoblock js-about"&gt;
+     &lt;div class="tabs-infoblock__inner"&gt;
+      &lt;h2 class="title main-title"&gt;&lt;span class="main-title__label"&gt;About me&lt;/span&gt;&lt;/h2&gt;
+       ...
+     &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section id="resume" class="tabs-infoblock resume"&gt;
+     &lt;div class="tabs-infoblock__inner"&gt;
+      &lt;h2 class="title main-title"&gt;&lt;span class="main-title__label"&gt;Resume&lt;/span&gt;&lt;/h2&gt;
+      ...
+     &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section id="services" class="tabs-infoblock services"&gt;
+     &lt;div class="tabs-infoblock__inner"&gt;
+      &lt;h2 class="title main-title"&gt;&lt;span class="main-title__label"&gt;Services&lt;/span&gt;&lt;/h2&gt;
+      ...
+     &lt;/div&gt;							
+    &lt;/section&gt;
+    &lt;section id="portfolio" class="tabs-infoblock"&gt;
+     &lt;div class="tabs-infoblock__inner"&gt;
+      &lt;h2 class="title main-title"&gt;&lt;span class="main-title__label"&gt;Portfolio&lt;/span&gt;&lt;/h2&gt;
+      ...				
+     &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;section id="blog" class="tabs-infoblock"&gt;
+     &lt;div class="tabs-infoblock__inner"&gt;
+      &lt;h2 class="title main-title"&gt;&lt;span class="main-title__label"&gt;Blog&lt;/span&gt;&lt;/h2&gt;
+      ...
+     &lt;/div&gt;				
+    &lt;/section&gt;	
+    &lt;section id="contacts" class="tabs-infoblock contacts js-contacts"&gt;
+     &lt;div class="tabs-infoblock__inner"&gt;
+      &lt;h2 class="title main-title"&gt;&lt;span class="main-title__label"&gt;Contacts&lt;/span&gt;&lt;/h2&gt;
+      ...
+     &lt;/div&gt;
+    &lt;/section&gt;					
+   &lt;/div&gt;
+   &lt;footer class="footer"&gt;
+    &lt;span&gt;Copyright © 2016 All rights reserved&lt;/span&gt;
+   &lt;/footer&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+ 
+  &lt;!-- popups--&gt;
+  
+ &lt;div id="js-post-popup" class="popup js-popup"&gt;
+  &lt;div class="popup__inner"&gt;
+   &lt;span class="popup__close js-popup__close"&gt;&lt;/span&gt;
+   &lt;div class="popup__layout"&gt;
+    &lt;div class="popup__container"&gt;
+     &lt;h3 class="title popup__title"&gt;Title post&lt;/h3&gt;
+     &lt;p&gt;Text&lt;/p&gt;
+     &lt;p&gt;
+      &lt;img src="http://placehold.it/1500x700" class="responsive-img" alt="img for post"&gt;
+     &lt;/p&gt;
+     &lt;p&gt;Text&lt;/p&gt;				
+     &lt;blockquote class="blockquote"&gt;
+      &lt;i class="icon blockquote__quote blockquote__quote-left icon-quote-left"&gt;&lt;/i&gt;
+      &lt;p&gt;Text&lt;/p&gt;
+      &lt;i class="icon blockquote__quote blockquote__quote-right icon-quote-right"&gt;&lt;/i&gt;
+     &lt;/blockquote&gt;
+     &lt;p&gt;Text&lt;/p&gt;					
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt; 
+ 
+  &lt;!-- attaching JS-scripts--&gt;
+
+ &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"&gt;&lt;/script&gt;
+ &lt;script src="js/components/nav.js"&gt;&lt;/script&gt;
+ &lt;script src="js/components/map.js"&gt;&lt;/script&gt;
+ &lt;script src="js/components/popup.js"&gt;&lt;/script&gt;
+ &lt;script src="js/main.js" async&gt;&lt;/script&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+					</code>
+				</pre>				
+			</article>
+			<article id="html_structure_about" class="dt-section">
+				<h2 class="dt-title">HTML structure of "About me" section</h2>		
+				<pre class="code language-html">
+					<code>
+&lt;section id="about" class="tabs-infoblock js-about"&gt;
+ &lt;div class="tabs-infoblock__inner"&gt;
+  &lt;h2 class="title main-title"&gt;&lt;span class="main-title__label"&gt;About me&lt;/span&gt;&lt;/h2&gt;
+  
+  &lt;!-- I’m Front-end Developer --&gt;
+  
+  &lt;div class="content__section"&gt;
+   &lt;h3 class="title title_middle"&gt;
+    &lt;i class="icon icon_small main-icon icon-bookmark"&gt;&lt;/i&gt;
+    &lt;span class="title__label"&gt;I’m Front-end Developer&lt;/span&gt;
+   &lt;/h3&gt;
+   &lt;blockquote class="blockquote"&gt;
+    &lt;i class="icon blockquote__quote blockquote__quote-left icon-quote-left"&gt;&lt;/i&gt;
+    &lt;p&gt;Text&lt;/p&gt;
+    &lt;i class="icon blockquote__quote blockquote__quote-right icon-quote-right"&gt;&lt;/i&gt;
+   &lt;/blockquote&gt;						
+  &lt;/div&gt;				
+  
+  &lt;!-- Personal Info --&gt;
+  
+  &lt;div class="content__section"&gt;
+   &lt;h3 class="title title_middle"&gt;
+    &lt;i class="icon icon_small main-icon icon-file-text-o"&gt;&lt;/i&gt;
+     &lt;span class="title__label"&gt;Personal Info&lt;/span&gt;
+   &lt;/h3&gt;
+   &lt;div class="iconboxs"&gt;
+    &lt;div class="iconbox"&gt;
+     &lt;i class="icon icon_middle iconbox__icon icon-earth"&gt;&lt;/i&gt;
+     &lt;div class="iconbox__info"&gt;
+      &lt;span class="iconbox__label iconbox__name"&gt;Language&lt;/span&gt;
+      &lt;span class="iconbox__label"&gt;English&lt;/span&gt;
+     &lt;/div&gt;
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;	
+  
+  &lt;!-- My Skills --&gt;
+  
+  &lt;div class="content__section"&gt;
+   &lt;div class="skills"&gt;
+    &lt;h3 class="title title_middle"&gt;
+     &lt;i class="icon icon_small main-icon icon-diamond"&gt;&lt;/i&gt;
+     &lt;span class="title__label"&gt;My Skills&lt;/span&gt;
+    &lt;/h3&gt;
+    &lt;div class="progress-bars"&gt;
+     &lt;div class="progress-bar"&gt;
+      &lt;span class="progress-bar__name"&gt;HTML / CSS&lt;/span&gt;
+      &lt;div class="progress"&gt;
+       &lt;span class="progress__value" style="width: 90%"&gt;&lt;/span&gt;
+      &lt;/div&gt;
+     &lt;/div&gt;
+    &lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;		
+  
+  &lt;!-- My Stats --&gt;
+  
+ &lt;div class="content__section"&gt;
+  &lt;h3 class="title title_middle"&gt;
+   &lt;i class="icon icon_small main-icon icon-trophy"&gt;&lt;/i&gt;
+   &lt;span class="title__label"&gt;My Stats&lt;/span&gt;
+  &lt;/h3&gt;
+  &lt;div class="iconboxs"&gt;
+   &lt;div class="iconbox"&gt;
+    &lt;i class="icon icon_middle iconbox__icon icon-thumbs-up"&gt;&lt;/i&gt;
+    &lt;div class="iconbox__info"&gt;
+     &lt;span class="iconbox__label iconbox__name"&gt;20+&lt;/span&gt;
+     &lt;span class="iconbox__label"&gt;projects done&lt;/span&gt;
+    &lt;/div&gt;
+   &lt;/div&gt;						
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+					</code>
+				</pre>		
+			</article>
+			<article id="html_structure_resume" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Resume" section</h2>		
+				<pre class="code language-html">
+					<code>
+&lt;section id="resume" class="tabs-infoblock resume"&gt;
+ &lt;div class="tabs-infoblock__inner"&gt;
+  &lt;h2 class="title main-title"&gt;&lt;span class="main-title__label"&gt;Resume&lt;/span&gt;&lt;/h2&gt;
+  
+  &lt;!-- Description of section --&gt;
+  
+  &lt;div class="content__section"&gt;
+   &lt;blockquote class="blockquote"&gt;
+    &lt;i class="icon blockquote__quote blockquote__quote-left icon-quote-left"&gt;&lt;/i&gt;
+    &lt;p&gt;Text&lt;/p&gt;
+    &lt;i class="icon blockquote__quote blockquote__quote-right icon-quote-right"&gt;&lt;/i&gt;
+   &lt;/blockquote&gt;
+   &lt;a href="#0" class="link-flat download-resume"&gt;
+    &lt;i class="icon link__icon icon-cloud-download"&gt;&lt;/i&gt;
+    &lt;span class="download-resume__label"&gt;Download resume&lt;/span&gt;
+   &lt;/a&gt;
+  &lt;/div&gt;
+  
+  &lt;!-- Education --&gt; 
+  
+  &lt;div class="content__section"&gt;
+   &lt;h3 class="title title_middle"&gt;
+    &lt;i class="icon icon_small main-icon icon-graduation-cap"&gt;&lt;/i&gt;
+    &lt;span class="title__label"&gt;Education&lt;/span&gt;
+   &lt;/h3&gt;
+   &lt;div class="timeline"&gt;
+    &lt;article class="timeline__box"&gt;
+     &lt;h4 class="title title_small"&gt;Name of Institute&lt;/h4&gt;
+     &lt;span class="timeline__caption"&gt;2002-2004&lt;/span&gt;
+     &lt;div class="timeline__content"&gt;
+      &lt;p&gt;Text&lt;/p&gt;
+     &lt;/div&gt;
+    &lt;/article&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+   
+   &lt;!-- Work experience --&gt;
+   
+  &lt;div class="content__section"&gt;
+   &lt;h3 class="title title_middle"&gt;
+    &lt;i class="icon icon_small main-icon icon-suitcase"&gt;&lt;/i&gt;
+    &lt;span class="title__label"&gt;Work experience&lt;/span&gt;
+   &lt;/h3&gt;
+   &lt;div class="timeline"&gt;
+    &lt;article class="timeline__box"&gt;
+     &lt;h4 class="title title_small"&gt;Trainee&lt;/h4&gt;
+     &lt;span class="timeline__caption"&gt;2011-2013 present Web-studio "Name Studio"&lt;/span&gt;
+     &lt;div class="timeline__content"&gt;
+      &lt;p&gt;Text&lt;/p&gt;
+     &lt;/div&gt;
+    &lt;/article&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+					</code>
+				</pre>							
+			</article>
+			<article id="html_structure_services" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Services" section</h2>		
+				<pre class="code language-html">
+					<code>
+&lt;section id="services" class="tabs-infoblock services"&gt;
+ &lt;div class="tabs-infoblock__inner"&gt;
+  &lt;h2 class="title main-title"&gt;&lt;span class="main-title__label"&gt;Services&lt;/span&gt;&lt;/h2&gt;
+  
+  &lt;!-- Description of section --&gt;
+  
+  &lt;div class="content__section"&gt;
+  &lt;blockquote class="blockquote"&gt;
+   &lt;i class="icon blockquote__quote blockquote__quote-left icon-quote-left"&gt;&lt;/i&gt;
+   &lt;p&gt;Text&lt;/p&gt;
+   &lt;i class="icon blockquote__quote blockquote__quote-right icon-quote-right"&gt;&lt;/i&gt;
+  &lt;/blockquote&gt;
+ &lt;/div&gt;		
+
+ &lt;!-- Services list --&gt;
+ 
+ &lt;div class="content__section"&gt;
+  &lt;div class="cards"&gt;
+   &lt;article class="card card_bg-yes"&gt;
+    &lt;header class="card__iconbox"&gt;
+     &lt;i class="icon icon_large card__icon icon-eye"&gt;&lt;/i&gt;
+    &lt;/header&gt;
+    &lt;div class="card__content"&gt;
+     &lt;h4 class="title title_small card__title"&gt;UI Design&lt;/h4&gt;
+     &lt;div class="card__description"&gt;
+      &lt;p&gt;Text&lt;/p&gt;
+     &lt;/div&gt;
+    &lt;/div&gt;
+   &lt;/article&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;!-- Pricing Table --&gt;
+ 
+ &lt;div class="content__section"&gt;
+ &lt;h3 class="title title_middle"&gt;
+  &lt;i class="icon icon_small main-icon icon-usd"&gt;&lt;/i&gt;
+   &lt;span class="title__label"&gt;Pricing Table&lt;/span&gt;
+  &lt;/h3&gt;
+  &lt;div class="content__section"&gt;
+   &lt;table class="price-table"&gt; 
+    &lt;thead class="price-table__thead"&gt;
+     &lt;tr&gt;
+      &lt;th class="price-table__th"&gt;Features&lt;/th&gt;
+      &lt;th class="price-table__th"&gt;Basic&lt;/th&gt;
+      &lt;th class="price-table__th"&gt;Advanced&lt;/th&gt;
+      &lt;th class="price-table__th"&gt;Professional&lt;/th&gt;
+     &lt;/tr&gt; 
+    &lt;/thead&gt;
+    &lt;tbody class="price-table__tbody"&gt;
+     &lt;tr class="price-table__tr"&gt;
+      &lt;td class="price-table__td"&gt;UI Design&lt;/td&gt;
+      &lt;td class="price-table__td"&gt;Yes&lt;/td&gt;
+      &lt;td class="price-table__td"&gt;Yes&lt;/td&gt;
+      &lt;td class="price-table__td"&gt;Yes&lt;/td&gt;
+     &lt;/tr&gt;													
+    &lt;/tbody&gt;
+   &lt;/table&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+ 
+ &lt;!-- Clients --&gt;
+ 
+ &lt;div class="content__section"&gt;
+  &lt;h3 class="title title_middle"&gt;
+   &lt;i class="icon icon_small main-icon icon-users"&gt;&lt;/i&gt;
+    &lt;span class="title__label"&gt;Clients&lt;/span&gt;
+   &lt;/h3&gt;
+   &lt;div class="clients"&gt;
+    &lt;a href="#0" class="client"&gt;&lt;img src="http://placehold.it/128x24" class="client__logo responsive-img" alt="client logo"&gt;&lt;/a&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;		
+
+  &lt;!-- Testimonials --&gt;
+  
+  &lt;div class="content__section"&gt;
+   &lt;h3 class="title title_middle"&gt;
+    &lt;i class="icon icon_small main-icon icon-comments"&gt;&lt;/i&gt;
+    &lt;span class="title__label"&gt;Testimonials&lt;/span&gt;
+   &lt;/h3&gt;
+   &lt;div class="content__section cards"&gt;
+    &lt;article class="card card_bg-yes"&gt;
+     &lt;header class="card__iconbox"&gt;
+      &lt;img src="http://placehold.it/150x150" class="card__avatar" alt="ava"&gt;
+     &lt;/header&gt;
+     &lt;div class="card__content"&gt;
+      &lt;h4 class="title title_small card__title"&gt;Full name&lt;/h4&gt;
+      &lt;span class="card__caption"&gt;CEO, Web-studio&lt;/span&gt;
+      &lt;blockquote class="card__description card__blockquote"&gt;
+       &lt;i class="icon card__quote card__quote-left icon-quote-left"&gt;&lt;/i&gt;
+       &lt;p&gt;Text&lt;/p&gt;
+       &lt;i class="icon card__quote card__quote-right icon-quote-right"&gt;&lt;/i&gt;
+      &lt;/blockquote&gt;
+     &lt;/div&gt;
+    &lt;/article&gt;		
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;							
+&lt;/section&gt;
+					</code>
+				</pre>							
+			</article>
+			<article id="html_structure_portfolio" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Portfolio" section</h2>		
+				<pre class="code language-html">
+					<code>
+&lt;section id="portfolio" class="tabs-infoblock"&gt;
+ &lt;div class="tabs-infoblock__inner"&gt;
+  &lt;h2 class="title main-title"&gt;&lt;span class="main-title__label"&gt;Portfolio&lt;/span&gt;&lt;/h2&gt;
+  
+  &lt;!-- Description of section --&gt;
+  
+  &lt;div class="content__section"&gt;
+   &lt;blockquote class="blockquote"&gt;
+    &lt;i class="icon blockquote__quote blockquote__quote-left icon-quote-left"&gt;&lt;/i&gt;
+    &lt;p&gt;Text&lt;/p&gt;
+    &lt;i class="icon blockquote__quote blockquote__quote-right icon-quote-right"&gt;&lt;/i&gt;
+   &lt;/blockquote&gt;
+  &lt;/div&gt;		
+
+  &lt;!-- Mobile application --&gt;
+  
+  &lt;div class="content__section"&gt;
+   &lt;h3 class="title title_middle"&gt;
+    &lt;i class="icon icon_small main-icon icon-android"&gt;&lt;/i&gt;
+    &lt;span class="title__label"&gt;Mobile application&lt;/span&gt;
+   &lt;/h3&gt;
+   &lt;div class="cards"&gt;
+    &lt;article class="card"&gt;
+     &lt;header class="card__header"&gt;
+      &lt;img src="http://placehold.it/480x320" class="responsive-img card__img" alt="Name project"&gt;
+     &lt;/header&gt;
+     &lt;div class="card__content"&gt;
+      &lt;h4 class="title title_small card__title"&gt;Name project&lt;/h4&gt;
+      &lt;div class="card__description"&gt;
+       &lt;p&gt;Text&lt;/p&gt;
+      &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;footer class="card__footer"&gt;
+      &lt;div class="tags"&gt;
+       &lt;i class="icon icon-local_offer"&gt;&lt;/i&gt;
+       &lt;span class="tags__item tags__label"&gt;Tags:&lt;/span&gt;
+       &lt;span class="tags__item tags__hashtag"&gt;#Mobile&lt;/span&gt;
+      &lt;/div&gt;
+      &lt;a href="#0" class="link-flat"&gt;Live Demo&lt;/a&gt;
+     &lt;/footer&gt;								
+    &lt;/article&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+					</code>
+				</pre>							
+			</article>	
+			<article id="html_structure_blog" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Blog" section</h2>		
+				<pre class="code language-html">
+					<code>
+&lt;section id="blog" class="tabs-infoblock"&gt;
+ &lt;div class="tabs-infoblock__inner"&gt;
+  &lt;h2 class="title main-title"&gt;&lt;span class="main-title__label"&gt;Blog&lt;/span&gt;&lt;/h2&gt;
+  
+  &lt;!-- Description of section --&gt;
+  
+  &lt;div class="content__section"&gt;
+   &lt;blockquote class="blockquote"&gt;
+    &lt;i class="icon blockquote__quote blockquote__quote-left icon-quote-left"&gt;&lt;/i&gt;
+    &lt;p&gt;Text&lt;/p&gt;
+    &lt;i class="icon blockquote__quote blockquote__quote-right icon-quote-right"&gt;&lt;/i&gt;
+   &lt;/blockquote&gt;
+  &lt;/div&gt;	
+
+  &lt;!-- Post --&gt;
+  
+  &lt;div class="content__section"&gt;
+   &lt;div class="cards"&gt;
+    &lt;article class="card"&gt;
+     &lt;header class="card__header"&gt;
+      &lt;img src="http://placehold.it/480x320" class="responsive-img card__img" alt="Title post"&gt;
+      &lt;span class="card__hashtag"&gt;8 April 2016&lt;/span&gt;
+     &lt;/header&gt;
+     &lt;div class="card__content"&gt;
+      &lt;h4 class="title title_small card__title"&gt;Title post&lt;/h4&gt;
+      &lt;div class="card__description"&gt;
+       &lt;p&gt;Text&lt;/p&gt;
+      &lt;/div&gt;
+     &lt;/div&gt;
+     &lt;footer class="card__footer"&gt;
+      &lt;div class="tags"&gt;
+       &lt;i class="icon icon-local_offer"&gt;&lt;/i&gt;
+       &lt;span class="tags__item tags__label"&gt;Tags:&lt;/span&gt;
+       &lt;span class="tags__item tags__hashtag"&gt;#blog&lt;/span&gt;
+       &lt;span class="tags__item tags__hashtag"&gt;#news&lt;/span&gt;
+      &lt;/div&gt;								
+      &lt;a href="#js-post-popup" class="link-flat js-readmore"&gt;Read more&lt;/a&gt;
+     &lt;/footer&gt;								
+    &lt;/article&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt;
+&lt;/section&gt;
+					</code>
+				</pre>							
+			</article>	
+			<article id="html_structure_contacts" class="dt-section">
+				<h2 class="dt-title">HTML structure of "Contacts" section</h2>		
+				<pre class="code language-html">
+					<code>
+&lt;section id="contacts" class="tabs-infoblock contacts js-contacts"&gt;
+ &lt;div class="tabs-infoblock__inner"&gt;
+  &lt;h2 class="title main-title"&gt;&lt;span class="main-title__label"&gt;Contacts&lt;/span&gt;&lt;/h2&gt;
+  
+  &lt;!-- Contacts info --&gt;
+  
+  &lt;div class="content__section"&gt;
+   &lt;div class="iconboxs"&gt;
+    &lt;div class="iconbox"&gt;
+     &lt;i class="icon icon_middle iconbox__icon icon-envelope-square"&gt;&lt;/i&gt;
+     &lt;div class="iconbox__info"&gt;
+      &lt;span class="iconbox__label iconbox__name"&gt;E-mail&lt;/span&gt;
+      &lt;span class="iconbox__label"&gt;yourmail@gmail.com&lt;/span&gt;
+     &lt;/div&gt;
+    &lt;/div&gt;						
+   &lt;/div&gt;
+   
+  &lt;!-- Map --&gt;
+   
+   &lt;div id="js-map" class="map"
+                       data-key="AIzaSyA27koLpPxsGA9HCEEpovOu5ySzCnx604c"
+                       data-lat="57.048671"
+                       data-lng="9.9201409"
+                       data-address="Gammeltorv 10,9000 Aalborg, Denmark"&gt;&lt;/div&gt;
+   
+  &lt;/div&gt;
+  
+  &lt;!-- Contact form --&gt;
+  
+  &lt;div class="content__section"&gt;
+   &lt;h3 class="title title_middle"&gt;
+    &lt;i class="icon icon_small main-icon icon-address-book"&gt;&lt;/i&gt;
+    &lt;span class="title__label"&gt;Contact form&lt;/span&gt;
+   &lt;/h3&gt;
+   &lt;form class="form"&gt;
+    &lt;div class="form__inner"&gt;
+     &lt;div class="form__group form__column"&gt;
+      &lt;input type="text" class="form__element field" name="username" placeholder="Your name" pattern="^\S[а-яА-ЯёЁa-zA-Z\s]+\S" required&gt;
+      &lt;i class="icon form__icon icon-user"&gt;&lt;/i&gt;
+      &lt;span class="form__decor-line"&gt;&lt;/span&gt;
+     &lt;/div&gt;
+     &lt;div class="form__group form__column"&gt;
+      &lt;input type="email" class="form__element field" name="usermail" placeholder="Your email" required&gt;
+      &lt;i class="icon form__icon icon-envelope"&gt;&lt;/i&gt;
+      &lt;span class="form__decor-line"&gt;&lt;/span&gt;
+     &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="form__group"&gt;
+     &lt;select class="form__element select" name="subject"&gt;
+      &lt;option class="select__option"&gt;Subject&lt;/option&gt;
+      &lt;option class="select__option"&gt;Job&lt;/option&gt;
+      &lt;option class="select__option"&gt;Testimonial&lt;/option&gt;
+      &lt;option class="select__option"&gt;Other&lt;/option&gt;
+     &lt;/select&gt;
+     &lt;i class="icon form__icon icon-book"&gt;&lt;/i&gt;
+    &lt;/div&gt;
+    &lt;div class="form__group"&gt;
+     &lt;textarea class="form__element field textarea" name="msg" placeholder="Your message" required&gt;&lt;/textarea&gt;
+     &lt;i class="icon form__icon icon-bubbles"&gt;&lt;/i&gt;
+     &lt;span class="form__decor-line"&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class="form__button-box"&gt;
+     &lt;button class="button"&gt;Send&lt;/button&gt;
+    &lt;/div&gt;							
+   &lt;/form&gt;
+
+  &lt;!-- Social --&gt;
+   
+   &lt;div class="social contacts__social"&gt;
+    &lt;a href="#0" class="icon social__icon icon-facebook"&gt;&lt;span class="social__name"&gt;Facebook&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="#0" class="icon social__icon icon-twitter"&gt;&lt;span class="social__name"&gt;Twitter&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="#0" class="icon social__icon icon-github"&gt;&lt;span class="social__name"&gt;GitHub&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="#0" class="icon social__icon icon-google-plus"&gt;&lt;span class="social__name"&gt;Google Plus&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="#0" class="icon social__icon icon-linkedin"&gt;&lt;span class="social__name"&gt;LinkedIn&lt;/span&gt;&lt;/a&gt;
+   &lt;/div&gt;					
+  &lt;/div&gt;	
+ &lt;/div&gt;	
+&lt;/section&gt;		
+					</code>
+				</pre>							
+			</article>	
+			<article id="icons" class="dt-section">
+				<h2 class="dt-title">Icons</h3>
+				<p>
+					In this theme are defined some of classes for icons.
+					If you need to change icon size, set new value for @icon_size.
+				</p>
+				<table>
+					<thead>
+					<tr>
+						<th>Name</th>
+						<th>Description</th>
+					</tr>
+					</thead>
+						<tbody>
+						<tr>
+							<td>.icon</td>
+							<td>Main class for displaying 1.6rem icons.</td>
+						</tr>
+						<tr>
+							<td>.icon_small</td>
+							<td>Class for displaying 2.4rem icons.</td>
+						</tr>
+						<tr>
+							<td>.icon_middle</td>
+							<td>Class for displaying 3.2rem icons.</td>
+						</tr>
+						<tr>
+							<td>.icon_large</td>
+							<td>Class for displaying 4.8rem icons.</td>
+						</tr>							
+					</tbody>
+				</table>
+			</article>
+			<article id="preloaders" class="dt-section">
+				<h2 class="dt-title">Preloaders</h3>
+				<p>
+					For using preloaders, you need to copy ready HTML code and paste it before tag 'body'. 
+					All ready examples you'll find in folder 'examples'.
+				</p>
+				<div class="dt-info-block">
+					<p>Preloader 1</p>
+					<div class="dt-info-block">
+						<pre class="code language-html">
+							<code>
+&lt;div id="js-overlay" class="overlay"&gt;	
+ &lt;div class="preloader preloader_type1"&gt;
+  &lt;div class="preloader__item"&gt;
+   &lt;div class="preloader__rotator"&gt;
+    &lt;div class="preloader__rotator-element"&gt;&lt;/div&gt;
+    &lt;div class="preloader__rotator-element"&gt;&lt;/div&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+ &lt;/div&gt; 
+&lt;/div&gt;
+							</code>
+						</pre>
+					</div>
+				</div>
+				<div class="dt-info-block">
+					<p>Preloader 2</p>
+					<div class="dt-info-block">
+						<pre class="code language-html">
+							<code>
+&lt;div id="js-overlay" class="overlay"&gt;	
+ &lt;div class="preloader preloader_type2"&gt;&lt;/div&gt;
+&lt;/div&gt;
+							</code>
+						</pre>	
+					</div>
+				</div>
+				<div class="dt-info-block">
+					<p>Preloader 3</p>
+					<div class="dt-info-block">
+						<pre class="code language-html">
+							<code>
+&lt;div id="js-overlay" class="overlay"&gt;	
+ &lt;div class="preloader preloader_type3"&gt;
+  &lt;div class="preloader__round"&gt;&lt;/div&gt;
+ &lt;/div&gt;
+&lt;/div&gt;
+							</code>
+						</pre>		
+					</div>					
+				</div>					
+			</article>	
+			<article class="dt-section">
+				<h2 class="dt-title">Shortcodes</h3>
+				<p>For viewing of all theme components use <a href="../../shortcodes.html">this link</a>.
+			</article>		
+		</div>
+	</div>
+<script src="assets/rainbow-custom.min.js"></script> 
+</body>
+</html>

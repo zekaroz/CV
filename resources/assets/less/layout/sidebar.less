@@ -1,0 +1,110 @@
+
+.sidebar{
+	transform: translate3d(0, 0, 0);
+	.shadow();
+}
+
+@media screen and (min-width: 1201px){
+	
+	.sidebar{
+		position: fixed;
+		height: 100vh;		
+	}
+}
+
+@media screen and (orientation: portrait) and (max-width: 1200px){
+	
+	.sidebar{
+		height: 100vh;		
+	}
+}
+
+@media screen and (min-width: 1400px){
+	
+	.sidebar{
+		width: 35%; 
+	}
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1399px){
+	
+	.sidebar{
+		width: 30%; 
+	}
+}
+
+@media screen and (max-width: 1200px){
+	
+	.sidebar{
+		width: 100%;
+	}	
+}
+
+.js-yes{
+
+	.sidebar{
+		opacity: 0;
+		transition: opacity .6s ease-out;
+	}	
+}
+
+.page-loaded{
+	.sidebar{
+		opacity: 1;
+	}
+}
+
+.avatar{
+	height: 100%;
+	background: url("http://placehold.it/1000x1500") no-repeat center center;
+	background-size: cover;
+}
+
+.mobile-avatar{
+	display: none;
+}
+
+@media screen and (orientation: landscape) and (max-width: 1200px){
+	
+	.avatar{
+		display: none;
+	}
+	
+	.mobile-avatar{
+		display: block;
+		width: 100%;
+	}
+}  
+
+.welcome{
+	
+	background-color: @color_main;
+	width: 100%;
+	box-sizing: border-box;
+	
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	
+	padding: 1rem;
+	text-align: center;
+}
+
+.welcome__msg{
+	font-size: 2.2rem;
+	font-weight: 400;
+	color: @color_white;
+}
+
+.welcome__label{
+	
+	font-weight: 400;
+	font-size: 1.2rem;
+	color: @color_light_main;
+	
+	display: block;
+	margin-top: .5rem;
+}
+
+
+

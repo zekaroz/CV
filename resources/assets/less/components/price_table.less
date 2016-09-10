@@ -1,0 +1,37 @@
+ 
+.price-table{ 
+	width: 100%; 
+	.shadow();
+	border-spacing: 0;
+	border-collapse: collapse; 
+}	
+
+.price-table__thead{
+	background-color: @color_main;
+	color: @color_white;
+}
+
+.price-table__td, .price-table__th{ 
+
+	padding: 1.5rem; 
+	text-align: center;
+	
+	&:first-child{
+		text-align: left;
+		font-weight: 700;
+	}
+}
+
+.price-table__tr{ 
+
+	border-bottom: .1rem solid @color_light_main;
+	transition: background-color 0.2s ease-in;
+	
+	&:last-of-type{
+		border-bottom: none;
+	}
+	
+	&:hover{ 
+		background-color: @color_gray;
+	}	
+}

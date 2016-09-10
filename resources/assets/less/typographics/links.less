@@ -1,0 +1,38 @@
+
+a{
+	text-decoration: none;
+	color: @color_main;
+	transition: color .4s ease-out;
+	
+	&:hover, &:focus{
+		color: @color_dark_main;	
+	}
+}
+
+.link-flat{
+	
+	display: inline-block;
+	padding: 1rem 2rem;
+	text-align: center;
+	
+	border: .1rem solid @color_dark_main;
+	background-color: @color_white;
+	
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: @color_dark_main;
+    text-transform: uppercase;
+		
+	&:hover, &:focus{
+		
+		background-color: @color_dark_main;
+		color: @color_white;
+		
+		& .link__icon{
+			
+			&:before{
+				color: @color_white;
+			}	
+		}		
+	}
+}

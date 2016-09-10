@@ -1,0 +1,57 @@
+
+.circle(@width, @height){
+	width: @width;
+	height: @height;
+	border-radius: 50%;
+}
+
+.js-yes{
+	
+	.overlay{
+		
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: 9999;
+		
+		width: 100%;
+		height: 100%;
+		background-color: @color_dark_main;
+	} 
+	 
+	.preloader{
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		z-index: 999;
+		transform: translate3d(-50%, -50%, 0);
+	}
+}
+
+.page-loaded{
+	
+	.overlay{
+		animation: fade-overlay .3s ease-out backwards;
+	}
+	
+	.preloader{
+		display: none;
+	}
+}
+
+@keyframes fade-overlay{
+ 
+	70%{
+		opacitty: 1;
+  	}
+
+  	100%{
+    	opacity: 0;
+  	}
+}
+
+@import 'preloader1.less';
+@import 'preloader2.less';
+@import 'preloader3.less';

@@ -1,0 +1,97 @@
+
+.js-yes{ 
+
+	.preloader_type1{
+		width: 5em;
+		height: 5em;
+	}
+
+	.preloader__item{
+		
+		position: relative;
+		.circle(5em, 5em);
+		
+		&:after{
+		
+			content: "";
+			background-color: @color_dark_main;
+			.circle(4em, 4em);
+			
+			position: absolute;
+			top: .5em;
+			left: .5em;
+		}
+	}
+
+	.preloader__rotator{
+		
+		position: relative;
+		width: 5em;
+		border-radius: 5em;
+		overflow: hidden;
+		
+		animation: rotate 2s infinite linear;
+		
+		&:before{
+			
+			content: "";
+			background-color: @color_white;
+			border: 3px solid @color_dark_main;
+			border-radius: 100%;
+			
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+	}
+
+	.preloader__rotator-element{
+		
+		background-color: @color_dark_main;
+		border-radius: 50% 0 0 50%;
+		transform-origin: 2.5em 2.5em;
+		
+		height: 5em;
+		width: 2.5em;
+
+		animation: rotate_left 2.5s infinite cubic-bezier(0.445, 0.050, 0.550, 0.950);
+		
+		&:last-child{
+			
+			margin-top: -5em;
+			border-radius: 0 50% 50% 0;
+			float: right;
+			
+			transform-origin: 0 50%;
+			animation: rotate_right 2.5s infinite cubic-bezier(0.445, 0.050, 0.550, 0.950);
+		}
+	}
+}
+
+@keyframes rotate{
+	0%{
+		transform: rotate(0);
+  	}
+	
+  	100%{
+    	transform: rotate(360deg);
+  	}
+}
+
+@keyframes rotate_left{
+	60%, 75%, 100%{
+    	transform: rotate(360deg);
+  	}	
+}
+
+@keyframes rotate_right{
+	0%, 25%, 45%{
+    	transform: rotate(0);
+  	}
+
+  	100%{
+    	transform: rotate(360deg);
+  	}
+}

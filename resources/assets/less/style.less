@@ -1,0 +1,121 @@
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1.Body 
+2.Typographics
+	2.1 Titles / .title / titles.less
+	2.2	Lists / ul, ol / typographics.less
+	2.3 Paragraphs / p / typographics.less
+	2.4 Links / .link / links.less
+	2.5 Blockqute / .blockqute / blockqute.less
+	2.6 Icons / .icon / icons.less
+3.Layout
+	3.1 Page / .page / layout.less
+	3.2 Header / .header / layout.less
+	3.3 Footer / .footer / layout.less
+	3.4 Left column / .sidebar / sidebar.less
+	3.5 Right column / 
+		3.5.1 Container / .container / content.less
+		3.5.2 Content / .content / content.less
+		3.5.3 Connection tabs_infoblocks.less / .tabs_infoblocks / content.less
+4.Sections
+	4.1 Contacts / .contacts / contacts.less
+	4.2 Resume / .resume / resume.less
+5.Components
+	5.1 Navigation / .nav / nav.less
+	5.2 Pagination / .pagination / pagination.less
+	5.3 Iconbox / .iconbox / iconbox.less
+	5.4 Progress bar / .progress-bars / progress-bar.less
+	5.5 Timeline / .timeline / timeline.less
+	5.6 Card / .card / card.less
+	5.7 Clients / .clients / clients.less
+	5.8 Pricing Table / .price-table / price_table.less
+	5.9 Contacts form / .form / .form.less
+	5.10 Popup / .popup / popup.less
+	5.11 Preloaders / .preloader / preloaders.less
+-------------------------------------------------------------------*/
+ 
+/*
+ *mixin for set default box-shadow
+ */
+
+.shadow(){
+	box-shadow: 0 2px 5px 0 @color_shadow;
+}
+  
+/*
+ *color variables
+ */
+
+@color_shadow: rgba(0, 0, 0, 0.298039);
+@color_black: #000;
+@color_white: #fff;
+@color_gray: #eee;
+
+ 
+@font_size: 1.4rem;
+
+*{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+html{
+	font-size: 10px;
+}
+
+@media screen and (max-width: 1024px){
+	html{
+		font-size: 8px;
+	}
+}
+
+@media screen and (max-width: 640px){
+	html{
+		font-size: 6.5px;
+	}
+}
+
+body{
+	font-family: @font_family;
+	font-size: @font_size;
+	background-color: @color_gray;
+}
+
+.responsive-img{
+	max-width: 100%;
+	height: auto; 
+}
+       
+@import 'typographics/typographics.less';
+ 
+/*
+ *import CSS for layout
+ */
+ 
+@import 'layout/layout.less';
+  
+/*
+ *import CSS for main sections
+ */
+
+@import 'resume.less'; 
+@import 'contacts.less'; 
+
+/*
+ *import CSS for components
+ */
+
+@import 'components/nav.less';
+@import 'components/pagination.less';
+@import 'components/iconbox.less';
+@import 'components/progress-bar.less';
+@import 'components/timeline.less';
+@import 'components/card.less';
+@import 'components/clients.less';
+@import 'components/price_table.less'; 
+@import 'components/form.less';
+@import 'components/popup.less';
+@import 'components/preloaders/preloaders.less';

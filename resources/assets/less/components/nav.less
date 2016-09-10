@@ -1,0 +1,156 @@
+
+.nav{
+	
+	position: fixed;
+	right: 2vw;
+	top: 2vw;
+	z-index: 10;	
+	
+	display: flex;
+	justify-content: space-around;
+	
+	width: 66%;
+	background-color: @color_dark_main;
+	.shadow();
+}
+
+.js-yes{
+	
+	.nav{
+		transform: translate3d(0, -100px, 0);
+		transition: transform .2s ease-out;
+	}
+}
+
+.page-loaded{
+	
+	.nav{
+		transform: translate3d(0, 0, 0);
+	}
+	
+	.js-nav_fixed{
+		transform: translate3d(0, -20px, 0);
+	} 	
+}	
+
+@media screen and (min-width: 1400px){
+	
+	.nav{
+		width: 61%;
+		height: 2.5vw;
+		line-height: 2.5vw;		
+	}
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1399px){ 
+	
+	.nav{
+		height: 3.5vw;
+		line-height: 3.5vw;
+	}
+}
+
+@media screen and (max-width: 1200px){
+
+	.nav{
+		width: 96%;
+		position: absolute;
+	}
+
+	.page-loaded{
+		
+		.js-nav_fixed{
+			
+			position: fixed;
+			left: 0;
+			top: 0;
+			transform: translate3d(0, 10px, 0);
+			
+			width: 100%;
+		}
+	}
+}
+
+.nav__link{
+	
+	display: inline-block;
+	box-sizing: border-box;
+	width: 16.666667%;
+
+	color: @color_white;
+    font-weight: 700;
+    letter-spacing: .05rem;	
+    text-transform: uppercase;	
+	
+	text-align: center;
+	transition: background-color .4s ease-out;
+	
+	&:hover, &:focus{
+
+		background-color: @color_white;
+		color: @color_dark_main;
+		
+		.nav__icon{
+
+			&:before{
+				color: @color_dark_main;
+			}
+		}	
+	}
+}
+
+.page-loaded{
+
+	.js-nav__link_active{
+		
+		background-color: @color_white;
+		color: @color_dark_main;		
+		
+		.nav__icon{
+			transform: rotateY(360deg);
+			
+			&:before{
+				color: @color_dark_main;
+			}			
+		}	
+	}
+}
+
+@media screen and (max-width: 1200px){
+	
+	.nav__link{
+		padding: 1.5rem 0;
+	}
+}
+
+.page-loaded{
+
+	.nav__icon{
+		transition: transform .5s ease-out;
+	}
+}
+
+@media screen and (max-width: 480px){
+	
+	.nav__icon{
+		
+		display: block;
+		margin-bottom: 0.5rem;
+		
+		&:before{
+			font-size: 2.3rem;
+		}
+	}	
+}
+
+.nav__label{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+@media screen and (max-width: 480px){
+
+	.nav__label{
+		font-size: 1.25rem;
+	}
+}

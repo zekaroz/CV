@@ -1,0 +1,62 @@
+
+.js-yes{ 
+	.map{
+		width: 100%;
+		height: 400px;
+		margin-top: 40px;
+	}
+}
+ 
+@media screen and (max-width: 480px){
+	
+	.js-yes{
+		.map{
+			height: 300px;  
+		}
+	}	
+}  
+ 
+.social{
+	display: flex;
+	flex-wrap: wrap;	
+	align-items: center;
+} 
+
+@social_icon_size: 4rem;
+
+.social__icon{
+	
+	width: @social_icon_size;
+	height: @social_icon_size;
+	line-height: @social_icon_size;
+	text-align: center;
+	
+	margin: 0 .5rem;
+	border-radius: 50%;
+	border: .1rem solid @color_dark_main;
+	transition: background-color .4s ease-out;
+	
+	&:hover, &:focus{
+
+		background-color: @color_dark_main;
+		
+		&:before{
+			color: @color_white;
+		}
+	}
+	
+	&:focus{
+		outline: none;
+	}
+}
+
+.contacts__social{
+	justify-content: center;
+	margin-top: 8rem;
+}
+
+.social__name{
+	position: absolute;
+    opacity: 0;
+    left: -10000px;
+}

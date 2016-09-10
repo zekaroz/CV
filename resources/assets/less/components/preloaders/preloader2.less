@@ -1,0 +1,47 @@
+ 
+@preloader2_size: 3rem;
+
+.js-yes{
+	.preloader_type2{
+		
+		&:before, &:after{
+			
+			content: "";
+			display: inline-block;
+			.circle(@preloader2_size, @preloader2_size);
+			
+			background-color: @color_white;
+			box-shadow: 1.7rem 1.7rem 5rem @color_shadow;
+		}
+		
+		&:before{
+			animation: animation_left_round .9s ease-in-out infinite alternate;
+		}
+		
+		&:after{
+			animation: animation_right_round .9s ease-in-out infinite alternate;
+		}
+	}
+}
+
+@keyframes animation_left_round{
+
+	0%{
+		transform: translate3d(0, 0, 0) scale(1);
+	}
+	
+	100%{
+		transform: translate3d(0, 0, 0) scale(.3);
+	}	
+}
+
+@keyframes animation_right_round{
+
+	0%{
+		transform: translate3d(-1rem, 0, 0) scale(.3);
+	}
+	
+	100%{
+		transform: translate3d(-1rem, 0, 0) scale(1);
+	}	
+}
