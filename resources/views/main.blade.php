@@ -42,15 +42,7 @@
 				</a>
 				<a href="#services" class="nav__link js-nav__link">
 					<i class="icon nav__icon icon_white icon-keyboard"></i>
-					<span class="nav__label">Services</span>
-				</a>
-				<a href="#portfolio" class="nav__link js-nav__link">
-					<i class="icon nav__icon icon_white icon-laptop_windows"></i>
-					<span class="nav__label">Portfolio</span>
-				</a>
-				<a href="#blog" class="nav__link js-nav__link">
-					<i class="icon nav__icon icon_white icon-mode_edit"></i>
-					<span class="nav__label">Blog</span>
+					<span class="nav__label">Experience</span>
 				</a>
 				<a href="#contacts" class="nav__link js-nav__link">
 					<i class="icon nav__icon icon_white icon-person_pin_circle"></i>
@@ -782,165 +774,6 @@
 						</div>
 					</div>
 				</section>
-				<section id="blog" class="tabs-infoblock">
-					<div class="tabs-infoblock__inner">
-						<h2 class="title main-title"><span class="main-title__label">Blog</span></h2>
-						<div class="content__section">
-							<blockquote class="blockquote">
-								<i class="icon blockquote__quote blockquote__quote-left icon-quote-left"></i>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, sit ipsam at et id
-									quisquam magni mollitia fugit esse voluptatibus velit earum labore hic laboriosam quidem culpa
-									obcaecati repudiandae delectus eligendi cum tempora amet impedit corporis! Iusto, enim, autem,
-									omnis reiciendis porro amet alias non temporibus pariatur nobis adipisci saepe!
-								</p>
-								<i class="icon blockquote__quote blockquote__quote-right icon-quote-right"></i>
-							</blockquote>
-						</div>
-						<div class="content__section">
-							<div class="cards">
-								<article class="card">
-									<header class="card__header">
-										<img src="http://placehold.it/480x320" class="responsive-img card__img" alt="Education">
-										<span class="card__hashtag">28 April 2016</span>
-									</header>
-									<div class="card__content">
-										<h4 class="title title_small card__title">Title post</h4>
-										<div class="card__description">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, consectetur, assumenda
-												fugiat odit illo unde eum aspernatur harum doloribus recusandae.
-											</p>
-										</div>
-									</div>
-									<footer class="card__footer">
-										<div class="tags">
-											<i class="icon icon-local_offer"></i>
-											<span class="tags__item tags__label">Tags:</span>
-											<span class="tags__item tags__hashtag">#blog</span>
-										</div>
-										<a href="#js-post-popup" class="link-flat js-readmore">Read more</a>
-									</footer>
-								</article>
-								<article class="card">
-									<header class="card__header">
-										<img src="http://placehold.it/480x320" class="responsive-img card__img" alt="Education">
-										<span class="card__hashtag">28 April 2016</span>
-									</header>
-									<div class="card__content">
-										<h4 class="title title_small card__title">Title post</h4>
-										<div class="card__description">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, consectetur, assumenda
-												fugiat odit illo unde eum aspernatur harum doloribus recusandae.
-											</p>
-										</div>
-									</div>
-									<footer class="card__footer">
-										<div class="tags">
-											<i class="icon icon-local_offer"></i>
-											<span class="tags__item tags__label">Tags:</span>
-											<span class="tags__item tags__hashtag">#blog</span>
-										</div>
-										<a href="#js-post-popup" class="link-flat js-readmore">Read more</a>
-									</footer>
-								</article>
-								<article class="card">
-									<header class="card__header">
-										<img src="http://placehold.it/480x320" class="responsive-img card__img" alt="Education">
-										<span class="card__hashtag">28 April 2016</span>
-									</header>
-									<div class="card__content">
-										<h4 class="title title_small card__title">Title post</h4>
-										<div class="card__description">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, consectetur, assumenda
-												fugiat odit illo unde eum aspernatur harum doloribus recusandae.
-											</p>
-										</div>
-									</div>
-									<footer class="card__footer">
-										<div class="tags">
-											<i class="icon icon-local_offer"></i>
-											<span class="tags__item tags__label">Tags:</span>
-											<span class="tags__item tags__hashtag">#blog</span>
-										</div>
-										<a href="#js-post-popup" class="link-flat js-readmore">Read more</a>
-									</footer>
-								</article>
-								<article class="card">
-									<header class="card__header">
-										<img src="http://placehold.it/480x320" class="responsive-img card__img" alt="Education">
-										<span class="card__hashtag">28 April 2016</span>
-									</header>
-									<div class="card__content">
-										<h4 class="title title_small card__title">Title post</h4>
-										<div class="card__description">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, consectetur, assumenda
-												fugiat odit illo unde eum aspernatur harum doloribus recusandae.
-											</p>
-										</div>
-									</div>
-									<footer class="card__footer">
-										<div class="tags">
-											<i class="icon icon-local_offer"></i>
-											<span class="tags__item tags__label">Tags:</span>
-											<span class="tags__item tags__hashtag">#blog</span>
-										</div>
-										<a href="#js-post-popup" class="link-flat js-readmore">Read more</a>
-									</footer>
-								</article>
-								<article class="card">
-									<header class="card__header">
-										<img src="http://placehold.it/480x320" class="responsive-img card__img" alt="Education">
-										<span class="card__hashtag">28 April 2016</span>
-									</header>
-									<div class="card__content">
-										<h4 class="title title_small card__title">Title post</h4>
-										<div class="card__description">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, consectetur, assumenda
-												fugiat odit illo unde eum aspernatur harum doloribus recusandae.
-											</p>
-										</div>
-									</div>
-									<footer class="card__footer">
-										<div class="tags">
-											<i class="icon icon-local_offer"></i>
-											<span class="tags__item tags__label">Tags:</span>
-											<span class="tags__item tags__hashtag">#blog</span>
-										</div>
-										<a href="#js-post-popup" class="link-flat js-readmore">Read more</a>
-									</footer>
-								</article>
-								<article class="card">
-									<header class="card__header">
-										<img src="http://placehold.it/480x320" class="responsive-img card__img" alt="Education">
-										<span class="card__hashtag">28 April 2016</span>
-									</header>
-									<div class="card__content">
-										<h4 class="title title_small card__title">Title post</h4>
-										<div class="card__description">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, consectetur, assumenda
-												fugiat odit illo unde eum aspernatur harum doloribus recusandae.
-											</p>
-										</div>
-									</div>
-									<footer class="card__footer">
-										<div class="tags">
-											<i class="icon icon-local_offer"></i>
-											<span class="tags__item tags__label">Tags:</span>
-											<span class="tags__item tags__hashtag">#blog</span>
-										</div>
-										<a href="#js-post-popup" class="link-flat js-readmore">Read more</a>
-									</footer>
-								</article>
-							</div>
-						</div>
-					</div>
-				</section>
 				<section id="contacts" class="tabs-infoblock contacts js-contacts">
 					<div class="tabs-infoblock__inner">
 						<h2 class="title main-title"><span class="main-title__label">Contacts</span></h2>
@@ -950,7 +783,7 @@
 									<i class="icon icon_middle iconbox__icon icon-envelope-square"></i>
 									<div class="iconbox__info">
 										<span class="iconbox__label iconbox__name">E-mail</span>
-										<span class="iconbox__label">yourmail@gmail.com</span>
+										<span class="iconbox__label">jose.mvb.queiros@gmail.com</span>
 									</div>
 								</div>
 								<div class="iconbox">
@@ -975,7 +808,7 @@
 									</div>
 								</div>
 							</div>
-							<div id="js-map" class="map" data-key="AIzaSyA27koLpPxsGA9HCEEpovOu5ySzCnx604c" data-lat="57.048671" data-lng="9.9201409" data-address="Gammeltorv 10,9000 Aalborg, Denmark"></div>
+				          <div id="js-map" class="map" data-key="AIzaSyA27koLpPxsGA9HCEEpovOu5ySzCnx604c" data-lat="57.048671" data-lng="9.9201409" data-address="Gammeltorv 10,9000 Aalborg, Denmark"></div>
 						</div>
 						<div class="content__section">
 							<h3 class="title title_middle">
@@ -1091,7 +924,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 <script src="../js/components/nav.js"></script>
 <script src="../js/components/map.js"></script>
-<script src="../js/components/popup.js"></script>
+ <script src="../js/components/popup.js"></script>
 <script src="../js/main.js" async></script>
 </body>
 </html>
