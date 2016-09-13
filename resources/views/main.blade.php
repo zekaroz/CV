@@ -4,7 +4,7 @@
 <meta charset="utf-8" >
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Strict Resume - it's vCard/resume template</title>
-<link rel="stylesheet" href="../css/arial.css">
+<link rel="stylesheet" href="{{ asset("css/arial.css") }}">
 </head>
 <body>
 <div id="js-overlay" class="overlay">
@@ -20,7 +20,7 @@
 <script>document.body.className = "js-yes";</script>
 <div class="page">
 	<aside id="js-sidebar" class="sidebar">
-		<img src="images/photo1500x1000.jpg" class="mobile-avatar" alt="avatar of Bernard Balfour">
+		<img src="{{ asset("images/photo1500x1000.jpg") }}" class="mobile-avatar" alt="avatar of Bernard Balfour">
 		<div class="avatar"></div>
 		<div class="welcome">
 			<h1 class="welcome__msg">
