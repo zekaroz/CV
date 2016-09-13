@@ -169,7 +169,7 @@
 								<div class="iconbox">
 									<i class="icon icon_middle iconbox__icon icon-smile"></i>
 									<div class="iconbox__info">
-										<span class="iconbox__label iconbox__name">5+</span>
+										<span class="iconbox__label iconbox__name">10+</span>
 										<span class="iconbox__label">happy clients</span>
 									</div>
 								</div>
@@ -206,7 +206,7 @@
 								</p>
 								<i class="icon blockquote__quote blockquote__quote-right icon-quote-right"></i>
 							</blockquote>
-							<a href="#0" class="link-flat download-resume">
+							<a href="{{asset("storage/CV_no_contact.pdf") }}" target="_blank" class="link-flat download-resume">
 								<i class="icon link__icon icon-cloud-download"></i>
 								<span class="download-resume__label">Download resume</span>
 							</a>
@@ -222,8 +222,6 @@
 									<span class="timeline__caption">2005-2009</span>
 									<div class="timeline__content">
 										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione,
-											ut harum ab cum vitae quam ipsam consequuntur necessitatibus ad corporis!
 										</p>
 									</div>
 								</article>
@@ -240,11 +238,75 @@
 									<span class="timeline__caption">Sept 2016 - present </span>
 									<div class="timeline__content">
 										<p>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione,
-											ut harum ab cum vitae quam ipsam consequuntur necessitatibus ad corporis!
+                      <ul>
+                        <li>Project initial Analisys</li>
+                        <li>Creation of User Stories</li>
+                        <li>Requirement Analysis</li>
+                      </ul>
 										</p>
 									</div>
 								</article>
+                <article class="timeline__box">
+									<h3 class="title title_small">Outsystems Developer</h3>
+									<span class="timeline__caption">Sept 2015 - Aug 2016</span>
+									<div class="timeline__content">
+										<p>
+                      <ul>
+                        <li>Software development</li>
+                        <li>Multi-Team Project</li>
+                        <li>User Story analysis</li>
+                        <li>Negotiation the user stories with the customer</li>
+                        <li>Software Architecture maintenance </li>
+                      </ul>
+										</p>
+									</div>
+								</article>
+                <article class="timeline__box">
+									<h3 class="title title_small">Engagement Manager</h3>
+									<span class="timeline__caption">Jan 2013 - Abr 2013</span>
+									<div class="timeline__content">
+										<p>
+                      <ul>
+                        <li>Key User Support</li>
+                        <li>Field Support</li>
+                        <li>Requirement Gathering and Analysis</li>
+                        <li>Traning Sessions with End Users</li>
+                        <li>Remote Project Control</li>
+                      </ul>
+                    </p>
+									</div>
+								</article>
+
+                <article class="timeline__box">
+									<h3 class="title title_small">Software Engineer</h3>
+									<span class="timeline__caption">Jan 2011 - Oct 2012</span>
+									<div class="timeline__content">
+										<p>
+                      <ul>
+                        <li>UML</li>
+                        <li>Requirement Analysis</li>
+                        <li>Maintenance</li>
+                        <li>Outsystems Development</li>
+                        <li>PL/SQL</li>
+                        <li>Web Services</li>
+                      </ul>
+                    </p>
+									</div>
+								</article>
+
+                <article class="timeline__box">
+									<h3 class="title title_small">Delivery Manager</h3>
+									<span class="timeline__caption">Fev 2010 - Dec 2010</span>
+									<div class="timeline__content">
+										<p>
+                      <ul>
+                        <li>Development and deploy of an application for Credit Granting and Risk management for a Mozambican Bank.</li>
+                        <li>It was a International Project with many integrations with banking core, BANKA, in a AS400.</li>
+                      </ul>
+                    </p>
+									</div>
+								</article>
+
 			        </div>
 						</div>
 					</div>
@@ -272,8 +334,6 @@
 										<h3 class="title title_small card__title">UI Design</h3>
 										<div class="card__description">
 											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, consectetur, assumenda
-												fugiat odit illo unde eum aspernatur harum doloribus recusandae.
 											</p>
 										</div>
 									</div>
@@ -286,8 +346,6 @@
 										<h4 class="title title_small card__title">Front-end programming</h4>
 										<div class="card__description">
 											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, consectetur, assumenda
-												fugiat odit illo unde eum aspernatur harum doloribus recusandae.
 											</p>
 										</div>
 									</div>
@@ -300,9 +358,7 @@
 										<h4 class="title title_small card__title">Mobile application</h4>
 										<div class="card__description">
 											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, consectetur, assumenda
-												fugiat odit illo unde eum aspernatur harum doloribus recusandae.
-											</p>
+                    	</p>
 										</div>
 									</div>
 								</article>
@@ -313,10 +369,7 @@
 									<div class="card__content">
 										<h4 class="title title_small card__title">Web development</h4>
 										<div class="card__description">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, consectetur, assumenda
-												fugiat odit illo unde eum aspernatur harum doloribus recusandae.
-											</p>
+											<p></p>
 										</div>
 									</div>
 								</article>
@@ -327,10 +380,7 @@
 									<div class="card__content">
 										<h4 class="title title_small card__title">Analysis</h4>
 										<div class="card__description">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, consectetur, assumenda
-												fugiat odit illo unde eum aspernatur harum doloribus recusandae.
-											</p>
+											<p></p>
 										</div>
 									</div>
 								</article>
@@ -341,10 +391,7 @@
 									<div class="card__content">
 										<h4 class="title title_small card__title">Support</h4>
 										<div class="card__description">
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, consectetur, assumenda
-												fugiat odit illo unde eum aspernatur harum doloribus recusandae.
-											</p>
+											<p></p>
 										</div>
 									</div>
 								</article>
@@ -363,116 +410,6 @@
 								<a href="#0" class="client"><img src="http://placehold.it/128x24" class="client__logo responsive-img" alt="client logo">Turismo de Portugal</a>
 								<a href="#0" class="client"><img src="http://placehold.it/128x24" class="client__logo responsive-img" alt="client logo">GDA</a>
 								<a href="#0" class="client"><img src="http://placehold.it/128x24" class="client__logo responsive-img" alt="client logo">Ministério do Planeamento Angolano</a>
-							</div>
-						</div>
-						<div class="content__section">
-							<h3 class="title title_middle">
-								<i class="icon icon_small main-icon icon-comments"></i>
-								<span class="title__label">Testimonials</span>
-							</h3>
-							<div class="content__section cards">
-								<article class="card card_bg-yes">
-									<header class="card__iconbox">
-										<img src="http://placehold.it/150x150" class="card__avatar" alt="ava">
-									</header>
-									<div class="card__content">
-										<h4 class="title title_small card__title">Full name</h4>
-										<span class="card__caption">Developer, Freelancer</span>
-										<blockquote class="card__description card__blockquote">
-											<i class="icon card__quote card__quote-left icon-quote-left"></i>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-												Maxime, rerum suscipit facere adipisci neque quod explicabo. Atque, eveniet ut sunt.
-											</p>
-											<i class="icon card__quote card__quote-right icon-quote-right"></i>
-										</blockquote>
-									</div>
-								</article>
-								<article class="card card_bg-yes">
-									<header class="card__iconbox">
-										<img src="http://placehold.it/150x150" class="card__avatar" alt="ava">
-									</header>
-									<div class="card__content">
-										<h4 class="title title_small card__title">Full name</h4>
-										<span class="card__caption">Developer, Freelancer</span>
-										<blockquote class="card__description card__blockquote">
-											<i class="icon card__quote card__quote-left icon-quote-left"></i>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-												Maxime, rerum suscipit facere adipisci neque quod explicabo. Atque, eveniet ut sunt.
-											</p>
-											<i class="icon card__quote card__quote-right icon-quote-right"></i>
-										</blockquote>
-									</div>
-								</article>
-								<article class="card card_bg-yes">
-									<header class="card__iconbox">
-										<img src="http://placehold.it/150x150" class="card__avatar" alt="ava">
-									</header>
-									<div class="card__content">
-										<h4 class="title title_small card__title">Full name</h4>
-										<span class="card__caption">Developer, Freelancer</span>
-										<blockquote class="card__description card__blockquote">
-											<i class="icon card__quote card__quote-left icon-quote-left"></i>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-												Maxime, rerum suscipit facere adipisci neque quod explicabo. Atque, eveniet ut sunt.
-											</p>
-											<i class="icon card__quote card__quote-right icon-quote-right"></i>
-										</blockquote>
-									</div>
-								</article>
-								<article class="card card_bg-yes">
-									<header class="card__iconbox">
-										<img src="http://placehold.it/150x150" class="card__avatar" alt="ava">
-									</header>
-									<div class="card__content">
-										<h4 class="title title_small card__title">Full name</h4>
-										<span class="card__caption">Developer, Freelancer</span>
-										<blockquote class="card__description card__blockquote">
-											<i class="icon card__quote card__quote-left icon-quote-left"></i>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-												Maxime, rerum suscipit facere adipisci neque quod explicabo. Atque, eveniet ut sunt.
-											</p>
-											<i class="icon card__quote card__quote-right icon-quote-right"></i>
-										</blockquote>
-									</div>
-								</article>
-								<article class="card card_bg-yes">
-									<header class="card__iconbox">
-										<img src="http://placehold.it/150x150" class="card__avatar" alt="ava">
-									</header>
-									<div class="card__content">
-										<h4 class="title title_small card__title">Full name</h4>
-										<span class="card__caption">Developer, Freelancer</span>
-										<blockquote class="card__description card__blockquote">
-											<i class="icon card__quote card__quote-left icon-quote-left"></i>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-												Maxime, rerum suscipit facere adipisci neque quod explicabo. Atque, eveniet ut sunt.
-											</p>
-											<i class="icon card__quote card__quote-right icon-quote-right"></i>
-										</blockquote>
-									</div>
-								</article>
-								<article class="card card_bg-yes">
-									<header class="card__iconbox">
-										<img src="http://placehold.it/150x150" class="card__avatar" alt="ava">
-									</header>
-									<div class="card__content">
-										<h4 class="title title_small card__title">Full name</h4>
-										<span class="card__caption">Developer, Freelancer</span>
-										<blockquote class="card__description card__blockquote">
-											<i class="icon card__quote card__quote-left icon-quote-left"></i>
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-												Maxime, rerum suscipit facere adipisci neque quod explicabo. Atque, eveniet ut sunt.
-											</p>
-											<i class="icon card__quote card__quote-right icon-quote-right"></i>
-										</blockquote>
-									</div>
-								</article>
 							</div>
 						</div>
 					</div>
@@ -847,11 +784,9 @@
 								</div>
 							</form>
 							<div class="social contacts__social">
-								<a href="#0" class="icon social__icon icon-facebook"><span class="social__name">Facebook</span></a>
-								<a href="#0" class="icon social__icon icon-twitter"><span class="social__name">Twitter</span></a>
-								<a href="#0" class="icon social__icon icon-github"><span class="social__name">GitHub</span></a>
-								<a href="#0" class="icon social__icon icon-google-plus"><span class="social__name">Google Plus</span></a>
-								<a href="#0" class="icon social__icon icon-linkedin"><span class="social__name">LinkedIn</span></a>
+								<a href="https://www.facebook.com/JoseManuelQueiros" target="_blank" class="icon social__icon icon-facebook"><span class="social__name">Facebook</span></a>
+								<a href="https://twitter.com/zekaroz" target="_blank" class="icon social__icon icon-twitter"><span class="social__name">Twitter</span></a>
+								<a href="https://www.linkedin.com/in/jos%C3%A9-queir%C3%B3s-7488a6125" target="_blank" class="icon social__icon icon-linkedin"><span class="social__name">LinkedIn</span></a>
 							</div>
 						</div>
 					</div>
@@ -860,63 +795,6 @@
 			<footer class="footer">
 				<span>Copyright © 2016 All rights reserved</span>
 			</footer>
-		</div>
-	</div>
-</div>
-<div id="js-post-popup" class="popup js-popup">
-	<div class="popup__inner">
-		<span class="popup__close js-popup__close"></span>
-		<div class="popup__layout">
-		<div class="popup__container">
-			<h2 class="title popup__title">
-				Title post
-			</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, dolores, nam,
-				sequi quibusdam consectetur aliquam vitae officia rem enim nihil maiores eveniet aperiam
-				aliquid nesciunt ea eius fuga cupiditate minus odio non dolorum reprehenderit ratione odit
-				fugit libero deserunt quasi laboriosam tenetur dolore praesentium cum architecto voluptas
-				nostrum quis molestiae ipsum excepturi hic obcaecati sit consequatur distinctio quos assumenda
-				adipisci inventore placeat dolor. Perferendis, asperiores, dolorem, nihil, voluptates veniam ipsa
-				dolorum quis rerum necessitatibus ab enim laborum nam accusamus modi.
-			</p>
-			<p>
-				<img src="http://placehold.it/1500x700" class="responsive-img" alt="img for post">
-			</p>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, dolores, nam,
-				sequi quibusdam consectetur aliquam vitae officia rem enim nihil maiores eveniet aperiam
-				aliquid nesciunt ea eius fuga cupiditate minus odio non dolorum reprehenderit ratione odit
-				fugit libero deserunt quasi laboriosam tenetur dolore praesentium cum architecto voluptas
-				nostrum quis molestiae ipsum excepturi hic obcaecati sit consequatur distinctio quos assumenda
-				adipisci inventore placeat dolor. Perferendis, asperiores, dolorem, nihil, voluptates veniam ipsa
-				dolorum quis rerum necessitatibus ab enim laborum nam accusamus modi.
-			</p>
-			<blockquote class="blockquote">
-				<i class="icon blockquote__quote blockquote__quote-left icon-quote-left"></i>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, sit ipsam at et id
-					quisquam magni mollitia fugit esse voluptatibus velit earum labore hic laboriosam quidem culpa
-					obcaecati repudiandae delectus eligendi cum tempora amet impedit corporis! Iusto, enim, autem,
-					omnis reiciendis porro amet alias non temporibus pariatur nobis adipisci saepe!
-				</p>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam velit beatae recusandae saepe
-					quaerat illo id magni dignissimos corporis enim. Aut, soluta, vitae, dolorem accusamus et iste quidem
-					nostrum blanditiis voluptatum quam sunt veniam laborum. Ipsum, facere earum doloribus. Veritatis.
-				</p>
-				<i class="icon blockquote__quote blockquote__quote-right icon-quote-right"></i>
-			</blockquote>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, dolores, nam,
-				sequi quibusdam consectetur aliquam vitae officia rem enim nihil maiores eveniet aperiam
-				aliquid nesciunt ea eius fuga cupiditate minus odio non dolorum reprehenderit ratione odit
-				fugit libero deserunt quasi laboriosam tenetur dolore praesentium cum architecto voluptas
-				nostrum quis molestiae ipsum excepturi hic obcaecati sit consequatur distinctio quos assumenda
-				adipisci inventore placeat dolor. Perferendis, asperiores, dolorem, nihil, voluptates veniam ipsa
-				dolorum quis rerum necessitatibus ab enim laborum nam accusamus modi.
-			</p>
-		</div>
 		</div>
 	</div>
 </div>
