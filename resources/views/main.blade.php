@@ -201,7 +201,7 @@
                   I've graduated in Universidade Nova de Lisboa where I've been for 3 and half years and then I went right away to the web developing industry.
                   </p>
                   <p>
-									In my carieer I've been in a plenty of big projects and in many diferent project roles. Mainly I've been doing
+									In my career I've been in a plenty of big projects and in many different project roles. Mainly I've been doing
                   outsourcing for our clients providing my experience and benefiting from big projects and clients.
 								</p>
 								<i class="icon blockquote__quote blockquote__quote-right icon-quote-right"></i>
