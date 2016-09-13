@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" >
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Strict Resume - it's vCard/resume template</title>
+<title>José Queirós - Software</title>
 <link rel="stylesheet" href="{{ asset("css/arial.css") }}">
 </head>
 <body>
@@ -922,9 +922,9 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-<script src="../js/components/nav.js"></script>
-<script src="../js/components/map.js"></script>
- <script src="../js/components/popup.js"></script>
-<script src="../js/main.js" async></script>
+<script src="{{ asset("js/components/nav.js") }}"></script>
+<script src="{{ asset("js/components/map.js") }}"></script>
+<script src="{{ asset("js/components/popup.js") }}"></script>
+<script src="{{ asset("js/main.js") }}" async></script>
 </body>
 </html>
