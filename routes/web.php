@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
+Route::get('/Curriculum', function () {
     return view('main');
 });
