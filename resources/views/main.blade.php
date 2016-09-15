@@ -206,7 +206,7 @@
 								</p>
 								<i class="icon blockquote__quote blockquote__quote-right icon-quote-right"></i>
 							</blockquote>
-							<a href="{{asset("storage/CV_no_contact.pdf") }}" target="_blank" class="link-flat download-resume">
+							<a href="{{asset("CV_no_contact.pdf") }}" target="_blank" class="link-flat download-resume">
 								<i class="icon link__icon icon-cloud-download"></i>
 								<span class="download-resume__label">Download resume</span>
 							</a>
